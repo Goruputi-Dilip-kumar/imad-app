@@ -9,6 +9,22 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+
+app.get('/firstpage', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'firstpage.html'));
+});
+
+
+app.get('/secondpage', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'secondpage.html'));
+});
+
+
+app.get('/thirdpage', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'thirdpage.html'));
+});
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
